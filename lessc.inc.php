@@ -66,6 +66,7 @@ class lessc{
 				$options['compress'] = true;
 				break;
 		}
+		$options['relativeUrls'] = false;
 
 		$parser = new Less_Parser($options);
 		$parser->setImportDirs($this->getImportDirs());
